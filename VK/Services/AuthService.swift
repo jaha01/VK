@@ -35,22 +35,26 @@ class AuthService: NSObject, VKSdkDelegate, VKSdkUIDelegate {
     
     func wakeUpSession(){
         let scope = ["offline"]
-        VKSdk.wakeUpSession(scope) { (status, error) in
+        VKSdk.wakeUpSession(scope) { [delegate](status, error) in
             switch status {
             case .initialized:
                 print("initialized")
                 VKSdk.authorize(scope)
             case .authorized:
                 print("authorized")
+                delegate?.authServiceSignIn()
             default:
-                fatalError(error!.localizedDescription)
+//                fatalError(error!.localizedDescription)
+                delegate?.authServiceSignInDidfail()
             }
         }
     }
     
     func vkSdkAccessAuthorizationFinished(with result: VKAuthorizationResult!) {
         print(#function)
-        delegate?.authServiceSignIn()
+        if result.token != nil {
+            delegate?.authServiceSignIn()
+        }
     }
     
     func vkSdkUserAuthorizationFailed() {

@@ -14,6 +14,8 @@
 		44EE919F2796E3E400E08FE7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 44EE919D2796E3E400E08FE7 /* LaunchScreen.storyboard */; };
 		44EE91A72796EDDB00E08FE7 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44EE91A62796EDDB00E08FE7 /* AuthService.swift */; };
 		44EE91A92796F78B00E08FE7 /* AuthViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 44EE91A82796F78B00E08FE7 /* AuthViewController.storyboard */; };
+		44EE91AC2797006B00E08FE7 /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44EE91AB2797006B00E08FE7 /* FeedViewController.swift */; };
+		44EE91AE2797007400E08FE7 /* FeedViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 44EE91AD2797007400E08FE7 /* FeedViewController.storyboard */; };
 		6B2639EE1890147324BFE6FA /* Pods_VK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0EA2D805C635F808D5DF3DD /* Pods_VK.framework */; };
 /* End PBXBuildFile section */
 
@@ -27,6 +29,8 @@
 		44EE91A02796E3E400E08FE7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		44EE91A62796EDDB00E08FE7 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
 		44EE91A82796F78B00E08FE7 /* AuthViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AuthViewController.storyboard; sourceTree = "<group>"; };
+		44EE91AB2797006B00E08FE7 /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
+		44EE91AD2797007400E08FE7 /* FeedViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = FeedViewController.storyboard; sourceTree = "<group>"; };
 		CF1D1306565774B79F001F62 /* Pods-VK.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VK.release.xcconfig"; path = "Target Support Files/Pods-VK/Pods-VK.release.xcconfig"; sourceTree = "<group>"; };
 		D1A9B3507A561342A2FED08D /* Pods-VK.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VK.debug.xcconfig"; path = "Target Support Files/Pods-VK/Pods-VK.debug.xcconfig"; sourceTree = "<group>"; };
 		E0EA2D805C635F808D5DF3DD /* Pods_VK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -75,14 +79,40 @@
 			children = (
 				44EE91922796E3E000E08FE7 /* AppDelegate.swift */,
 				44EE91942796E3E000E08FE7 /* SceneDelegate.swift */,
-				44EE91962796E3E000E08FE7 /* AuthViewController.swift */,
-				44EE91A82796F78B00E08FE7 /* AuthViewController.storyboard */,
-				44EE91A62796EDDB00E08FE7 /* AuthService.swift */,
+				44EE91AF279700DD00E08FE7 /* FeedViewController */,
+				44EE91B0279700ED00E08FE7 /* AuthViewController */,
+				44EE91AA2797000600E08FE7 /* Services */,
 				44EE919B2796E3E400E08FE7 /* Assets.xcassets */,
 				44EE919D2796E3E400E08FE7 /* LaunchScreen.storyboard */,
 				44EE91A02796E3E400E08FE7 /* Info.plist */,
 			);
 			path = VK;
+			sourceTree = "<group>";
+		};
+		44EE91AA2797000600E08FE7 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				44EE91A62796EDDB00E08FE7 /* AuthService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		44EE91AF279700DD00E08FE7 /* FeedViewController */ = {
+			isa = PBXGroup;
+			children = (
+				44EE91AB2797006B00E08FE7 /* FeedViewController.swift */,
+				44EE91AD2797007400E08FE7 /* FeedViewController.storyboard */,
+			);
+			path = FeedViewController;
+			sourceTree = "<group>";
+		};
+		44EE91B0279700ED00E08FE7 /* AuthViewController */ = {
+			isa = PBXGroup;
+			children = (
+				44EE91962796E3E000E08FE7 /* AuthViewController.swift */,
+				44EE91A82796F78B00E08FE7 /* AuthViewController.storyboard */,
+			);
+			path = AuthViewController;
 			sourceTree = "<group>";
 		};
 		6188B3B71944C1FF926BCC19 /* Pods */ = {
@@ -157,6 +187,7 @@
 				44EE919F2796E3E400E08FE7 /* LaunchScreen.storyboard in Resources */,
 				44EE919C2796E3E400E08FE7 /* Assets.xcassets in Resources */,
 				44EE91A92796F78B00E08FE7 /* AuthViewController.storyboard in Resources */,
+				44EE91AE2797007400E08FE7 /* FeedViewController.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -211,6 +242,7 @@
 			files = (
 				44EE91972796E3E000E08FE7 /* AuthViewController.swift in Sources */,
 				44EE91932796E3E000E08FE7 /* AppDelegate.swift in Sources */,
+				44EE91AC2797006B00E08FE7 /* FeedViewController.swift in Sources */,
 				44EE91952796E3E000E08FE7 /* SceneDelegate.swift in Sources */,
 				44EE91A72796EDDB00E08FE7 /* AuthService.swift in Sources */,
 			);
