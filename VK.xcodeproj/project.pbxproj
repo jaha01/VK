@@ -16,6 +16,8 @@
 		44EE91A92796F78B00E08FE7 /* AuthViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 44EE91A82796F78B00E08FE7 /* AuthViewController.storyboard */; };
 		44EE91AC2797006B00E08FE7 /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44EE91AB2797006B00E08FE7 /* FeedViewController.swift */; };
 		44EE91AE2797007400E08FE7 /* FeedViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 44EE91AD2797007400E08FE7 /* FeedViewController.storyboard */; };
+		44EE91B2279715A700E08FE7 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44EE91B1279715A700E08FE7 /* NetworkService.swift */; };
+		44EE91B4279715DD00E08FE7 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44EE91B3279715DD00E08FE7 /* API.swift */; };
 		6B2639EE1890147324BFE6FA /* Pods_VK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0EA2D805C635F808D5DF3DD /* Pods_VK.framework */; };
 /* End PBXBuildFile section */
 
@@ -31,6 +33,8 @@
 		44EE91A82796F78B00E08FE7 /* AuthViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AuthViewController.storyboard; sourceTree = "<group>"; };
 		44EE91AB2797006B00E08FE7 /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
 		44EE91AD2797007400E08FE7 /* FeedViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = FeedViewController.storyboard; sourceTree = "<group>"; };
+		44EE91B1279715A700E08FE7 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		44EE91B3279715DD00E08FE7 /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
 		CF1D1306565774B79F001F62 /* Pods-VK.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VK.release.xcconfig"; path = "Target Support Files/Pods-VK/Pods-VK.release.xcconfig"; sourceTree = "<group>"; };
 		D1A9B3507A561342A2FED08D /* Pods-VK.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VK.debug.xcconfig"; path = "Target Support Files/Pods-VK/Pods-VK.debug.xcconfig"; sourceTree = "<group>"; };
 		E0EA2D805C635F808D5DF3DD /* Pods_VK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -93,6 +97,8 @@
 			isa = PBXGroup;
 			children = (
 				44EE91A62796EDDB00E08FE7 /* AuthService.swift */,
+				44EE91B1279715A700E08FE7 /* NetworkService.swift */,
+				44EE91B3279715DD00E08FE7 /* API.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -244,7 +250,9 @@
 				44EE91932796E3E000E08FE7 /* AppDelegate.swift in Sources */,
 				44EE91AC2797006B00E08FE7 /* FeedViewController.swift in Sources */,
 				44EE91952796E3E000E08FE7 /* SceneDelegate.swift in Sources */,
+				44EE91B2279715A700E08FE7 /* NetworkService.swift in Sources */,
 				44EE91A72796EDDB00E08FE7 /* AuthService.swift in Sources */,
+				44EE91B4279715DD00E08FE7 /* API.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
