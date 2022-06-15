@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		447B0ED8285A7BDC009BA965 /* WebImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 447B0ED7285A7BDC009BA965 /* WebImageView.swift */; };
 		44EE91932796E3E000E08FE7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44EE91922796E3E000E08FE7 /* AppDelegate.swift */; };
 		44EE91952796E3E000E08FE7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44EE91942796E3E000E08FE7 /* SceneDelegate.swift */; };
 		44EE91972796E3E000E08FE7 /* AuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44EE91962796E3E000E08FE7 /* AuthViewController.swift */; };
@@ -33,6 +34,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		447B0ED7285A7BDC009BA965 /* WebImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebImageView.swift; sourceTree = "<group>"; };
 		44EE918F2796E3E000E08FE7 /* VK.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VK.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		44EE91922796E3E000E08FE7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		44EE91942796E3E000E08FE7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -82,6 +84,14 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		447B0ED9285A7C08009BA965 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				447B0ED7285A7BDC009BA965 /* WebImageView.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
 		44EE91862796E3E000E08FE7 = {
 			isa = PBXGroup;
 			children = (
@@ -109,6 +119,7 @@
 				44EE91AF279700DD00E08FE7 /* Эту папку удаляем */,
 				44EE91B0279700ED00E08FE7 /* AuthViewController */,
 				44EE91AA2797000600E08FE7 /* Services */,
+				447B0ED9285A7C08009BA965 /* Helpers */,
 				44EE919B2796E3E400E08FE7 /* Assets.xcassets */,
 				44EE919D2796E3E400E08FE7 /* LaunchScreen.storyboard */,
 				44EE91A02796E3E400E08FE7 /* Info.plist */,
@@ -306,6 +317,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				44EE91B727999BF200E08FE7 /* FeedResponse.swift in Sources */,
+				447B0ED8285A7BDC009BA965 /* WebImageView.swift in Sources */,
 				44EE91C2279AE51A00E08FE7 /* NewsFeedPresenter.swift in Sources */,
 				44EE91972796E3E000E08FE7 /* AuthViewController.swift in Sources */,
 				44EE91932796E3E000E08FE7 /* AppDelegate.swift in Sources */,
