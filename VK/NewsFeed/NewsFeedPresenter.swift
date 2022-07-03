@@ -63,7 +63,7 @@ class NewsFeedPresenter: NewsFeedPresentationLogic {
     }
     
     private func photoAttechment(feedItem: FeedItem) -> FeedViewModel.FeedCellPhotoAttechment? {
-        guard let photos = feedItem.attechments?.compactMap({ (attachment) in
+        guard let photos = feedItem.attachments?.compactMap({ (attachment) in
             attachment.photo
         }), let fisrtPhoto = photos.first else {
             return nil

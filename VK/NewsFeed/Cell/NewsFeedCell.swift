@@ -43,8 +43,8 @@ class NewsFeedCell: UITableViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
-//        iconImageView.layer.cornerRadius = iconImageView.frame.width / 2
-  //      iconImageView.clipsToBounds = true
+//       iconImageView.layer.cornerRadius = iconImageView.frame.width / 2
+//       iconImageView.clipsToBounds = true
     }
     
     func set(viewModel: FeedCellViewModel){
@@ -59,7 +59,6 @@ class NewsFeedCell: UITableViewCell {
         
         if let photoAttechment = viewModel.photoAttechment {
             postImageView.set(imageURL: photoAttechment.photoUrlString)
-            print("HERE WE ARE!")
             postImageView.isHidden = false
         } else {
             postImageView.isHidden = true

@@ -28,7 +28,7 @@ struct FeedItem: Decodable {
     let likes: CountableItem?
     let reposts: CountableItem?
     let views: CountableItem?
-    let attechments: [Attechment]? // загрузка фото поста
+    let attachments: [Attechment]? // загрузка фото поста
  
 }
 

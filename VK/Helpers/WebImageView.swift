@@ -12,29 +12,31 @@ class WebImageView: UIImageView {
     
     func set(imageURL: String?) {
         guard let imageURL = imageURL, let url = URL(string: imageURL) else { return }
-        
-        // проверим, если фото группы или друга уже подгружено то не будем его загружать заново и сэкономим на этом время и ресурсы, те загрузим один раз дальше будем использовать из кэша
+        print("1-URL: \(url)")
         if let cachedResponse = URLCache.shared.cachedResponse(for: URLRequest(url: url)) {
             self.image = UIImage(data: cachedResponse.data)
-            print("from cache")
+            //print("from cachе")
             return
         }
-        print("from internet")
+        print("2-URL: \(url)")
+        //print("from internet")
         
         let dataTask = URLSession.shared.dataTask(with: url) { [weak self] (data, response, error) in
+            
             DispatchQueue.main.async {
                 if let data = data, let response = response {
                     self?.image = UIImage(data: data)
-                    self?.handleImageLoaded(data: data, response: response)
+                    self?.handleLoadedImage(data: data, response: response)
                 }
             }
         }
         dataTask.resume()
     }
     
-    private func handleImageLoaded(data: Data, response: URLResponse){
+    private func handleLoadedImage(data: Data, response: URLResponse) {
         guard let responseURL = response.url else { return }
         let cachedResponse = CachedURLResponse(response: response, data: data)
         URLCache.shared.storeCachedResponse(cachedResponse, for: URLRequest(url: responseURL))
+        
     }
 }
