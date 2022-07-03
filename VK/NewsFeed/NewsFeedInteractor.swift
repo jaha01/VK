@@ -37,6 +37,9 @@ class NewsFeedInteractor: NewsFeedBusinessLogic {
 //            feedResponse?.items.map({ feedItem in
 //                print(feedItem.sourceId)
 //            })
+            feedResponse?.items.map({ feedIem in
+                print("attachments =  \(feedIem.attechments)")
+            })
             
             guard let feedResponse = feedResponse else { return }
            // self?.presenter?.presentData(response: NewsFeed.Model.Response.ResponseType.presentNewsFeed)

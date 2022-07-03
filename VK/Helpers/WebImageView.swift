@@ -10,8 +10,8 @@ import UIKit
 
 class WebImageView: UIImageView {
     
-    func set(imageURL: String) {
-        guard let url = URL(string: imageURL) else { return }
+    func set(imageURL: String?) {
+        guard let imageURL = imageURL, let url = URL(string: imageURL) else { return }
         
         // проверим, если фото группы или друга уже подгружено то не будем его загружать заново и сэкономим на этом время и ресурсы, те загрузим один раз дальше будем использовать из кэша
         if let cachedResponse = URLCache.shared.cachedResponse(for: URLRequest(url: url)) {

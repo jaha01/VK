@@ -19,3 +19,4 @@ class NewsFeedRouter: NSObject, NewsFeedRoutingLogic {
   // MARK: Routing
   
 }
+
